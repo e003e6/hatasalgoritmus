@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>{{ page.title }} – {{ site.title }}</title>
+  <link rel="stylesheet" href="https://github.com/e003e6/webtema_md/blob/main/style.css">
+</head>
+<body>
+
+
+
+<header>
+  <div class="title-row">
+    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    {% if site.description %}
+      <p>{{ site.description }}</p>
+    {% endif %}
+  </div>
+
+  <nav>
+    {% assign pages_list = site.pages | sort: 'path' %}
+    {% for page in pages_list %}
+      {% unless page.name == 'index.md' or page.name == '404.md' %}
+        <a href="{{ page.url | relative_url }}">{{ page.title | default: page.name }}</a>
+      {% endunless %}
+    {% endfor %}
+  </nav>
+</header>
+
+
+
+
+  <main>
+    {{ content }}
+  </main>
+
+
+
+
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" defer></script>
+
+</body>
+</html>

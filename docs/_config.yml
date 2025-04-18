@@ -1,0 +1,14 @@
+title: Teszt oldal
+description: Layout tesztelés
+theme: null
+
+# kódszínezés
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  footnote_nr: 1
+  syntax_highlighter_opts:
+    line_numbers: false
