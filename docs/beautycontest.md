@@ -38,7 +38,4 @@ De sohasem jutnak el az alanyok a Nash-egyensúlyhoz. A játékokban a nyerő sz
 
 A BCG jól illusztrálja, hogyan működnek a várakozások a stratégiai döntések során, és milyen nehézségek adódhatnak abból, ha mások gondolkodását próbáljuk előre jelezni. 
 
-A BCG játékot nem lehet modellezni teljesen racionális szereplők
-döntéseivel.
-
-A [szimulációs](szim.md) megvalósítás ...
+A BCG játékot nem lehet modellezni teljesen racionális szereplők döntéseivel.
