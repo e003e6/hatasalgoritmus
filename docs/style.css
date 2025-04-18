@@ -1,0 +1,148 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1em;
+}
+h1 {
+  font-size: 2em;
+  color: #494a4a;
+  margin-top: 2em;
+}
+
+main > h1 {
+  margin-top: 0;
+}
+
+
+h2 {
+  font-size: 1.7em;
+  color: #515457;
+  margin-top: 1.7em;
+}
+
+
+
+a,
+a:visited {
+  color: blue; /* vagy amit szeretnél */
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+header {
+  padding: 1em 0em;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2em;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.title-row a {
+    color: #333;
+}
+
+.title-row h1,
+.title-row p {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+nav a {
+  color: #333;
+}
+nav a:visited {
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+p {
+  line-height: 1.5;
+}
+
+
+/* felsorolás sortávolság */
+li {
+  line-height: 1.2;
+}
+
+/* a felsorlás elötti szöveg és a felsorls között ne legyen sorköz */
+p + ol {
+  margin-top: 0;
+}
+p:has(+ ol) {
+  margin-bottom: 0;
+}
+
+
+
+/* kódszínezés */
+.highlight {
+  background-color: #f8f8f8;
+  padding: 1em 0.2em;
+  overflow-x: auto;
+  font-family: Menlo, Monaco, monospace;
+}
+
+.highlight .k  { color: #007020; font-weight: bold; }   /* kulcsszavak */
+.highlight .ow { color: #007020; font-weight: bold; }   /* egyéb kulcsszavak */
+.highlight .n  { color: #333; }                         /* nevek */
+.highlight .s  { color: #4070a0; }                      /* stringek */
+.highlight .mi { color: #164; }                         /* számok */
+.highlight .p  { color: #999; }                         /* zárójelek */
+.highlight .o  { color: #aa22ff; }                      /* operátorok */
+.highlight .c,
+.highlight .c1  { color: #999; font-style: italic; }    /* komment */
+.highlight .nf { color: #0086B3; }                      /* függvény nevek */
+.highlight .nb { color: purple; font-weight: bold;}     /* beépített függvények */
+
+
+
+
+/* idézet formázás */
+
+blockquote {
+  border-left: 4px solid #ccc;
+  padding: 0.5em 1em;
+  margin: 1.5em 0;
+  background-color: #f9f9f9;
+  font-style: italic;
+  color: #555;
+}
+
+
+
